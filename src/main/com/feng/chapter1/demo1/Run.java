@@ -1,9 +1,9 @@
-package com.feng.chapter1;
+package com.feng.chapter1.demo1;
 
 /**
  * @author jinx
  * @date 2017/12/18
- * Desc:
+ * Desc:继承thread类
  */
 public class Run {
     public static void main(String[] args) {
