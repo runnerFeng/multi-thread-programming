@@ -3,7 +3,7 @@ package com.feng.chapter1.demo13;
 /**
  * @author jinx
  * @date 2017/12/29 17:10
- * Desc:
+ * Desc:sleep()方法
  */
 public class Run1 {
     public static void main(String[] args) {
