@@ -1,4 +1,4 @@
-package com.feng.chapter2.demo1;
+package com.feng.chapter2.demo2;
 
 /**
  * @author jinx
