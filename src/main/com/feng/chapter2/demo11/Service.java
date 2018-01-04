@@ -8,11 +8,11 @@ package com.feng.chapter2.demo11;
 public class Service {
     private String username;
     private String password;
-    private String anyThing = new String();
+    private String anything = new String();
 
     public void setUsernameAndPassword(String username, String password) {
         try {
-            synchronized (anyThing) {
+            synchronized (anything) {
                 System.out.println("线程名为：" + Thread.currentThread().getName() + " 的线程在:" + System.currentTimeMillis() + "进入同步块了！");
                 this.username = username;
                 Thread.sleep(2000);
