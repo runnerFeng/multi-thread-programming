@@ -8,7 +8,8 @@ package com.feng.chapter2.demo11;
 public class Service {
     private String username;
     private String password;
-    private String anything = new String();
+//    private String anything = new String();
+    private String anything = "aa";
 
     public void setUsernameAndPassword(String username, String password) {
         try {
