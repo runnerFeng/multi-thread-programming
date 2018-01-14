@@ -8,7 +8,7 @@ package com.feng.chapter2.demo27;
 public class PrintString implements Runnable {
     private boolean isContinuePrintString = true;
 
-     public void printStringMethod() {
+    public void printStringMethod() {
         while (isContinuePrintString == true) {
             System.out.println("run printStringMethod threadName:" + Thread.currentThread().getName());
             try {
