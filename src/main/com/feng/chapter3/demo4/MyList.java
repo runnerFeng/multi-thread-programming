@@ -1,4 +1,4 @@
-package com.feng.chapter3.demo1;
+package com.feng.chapter3.demo4;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -9,13 +9,13 @@ import java.util.List;
  * Desc:
  */
 public class MyList {
-    private List list = new ArrayList<>();
+    private static List list = new ArrayList<>();
 
-    public void add() {
+    public static void add() {
         list.add("高红艳");
     }
 
-    public int getSize() {
+    public static int getSize() {
         return list.size();
     }
 }
