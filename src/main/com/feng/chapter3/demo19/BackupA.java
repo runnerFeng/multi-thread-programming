@@ -12,7 +12,8 @@ public class BackupA extends Thread {
         this.dbTools = dbTools;
     }
 
-    public BackupA() {
+    @Override
+    public void run() {
         dbTools.backupA();
     }
 }

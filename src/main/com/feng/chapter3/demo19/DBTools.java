@@ -9,15 +9,14 @@ public class DBTools {
     volatile private boolean prevIsA = false;
 
     synchronized public void backupA() {
-        System.out.println("aaaaaaaaa");
         try {
-            while (prevIsA ==false) {
+            while (prevIsA ==true) {
                 wait();
             }
             for (int i = 0; i < 5; i++) {
                 System.out.println("@@@@@@@@@");
             }
-            prevIsA = false;
+            prevIsA = true;
             notifyAll();
         } catch (InterruptedException e) {
             e.printStackTrace();
@@ -25,15 +24,14 @@ public class DBTools {
     }
 
     synchronized public void backupB() {
-        System.out.println("bbbbbbbb"+prevIsA);
         try {
-            while (prevIsA == true) {
+            while (prevIsA == false) {
                 wait();
             }
             for (int i = 0; i < 5; i++) {
                 System.out.println("########");
             }
-            prevIsA = true;
+            prevIsA = false;
             notifyAll();
         } catch (InterruptedException e) {
             e.printStackTrace();
