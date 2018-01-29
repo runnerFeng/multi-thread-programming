@@ -1,7 +1,7 @@
-package com.feng.chapter3.demo17;
+package com.feng.chapter3.demo18;
 
 import java.io.IOException;
-import java.io.PipedOutputStream;
+import java.io.PipedWriter;
 
 /**
  * @author jinx
@@ -9,12 +9,12 @@ import java.io.PipedOutputStream;
  * Desc:
  */
 public class WriteData {
-    public void writeMethod(PipedOutputStream out) {
+    public void writeMethod(PipedWriter out) {
         try {
             System.out.println("write:");
             for (int i = 0; i < 300; i++) {
                 String outData = (i + 1) + "";
-                out.write(outData.getBytes());
+                out.write(outData);
                 System.out.print(outData);
             }
             System.out.println();
