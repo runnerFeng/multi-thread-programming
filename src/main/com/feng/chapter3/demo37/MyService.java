@@ -46,12 +46,12 @@ public class MyService {
 
     public void signalAll1() {
         try {
-            //lock.lock();
+            lock.lock();
             System.out.println("signalAll1 start");
             condition1.signalAll();
             System.out.println("signalAll1 end");
         } finally {
-            //lock.unlock();
+            lock.unlock();
             System.out.println("signalAll1 释放锁了");
         }
     }
