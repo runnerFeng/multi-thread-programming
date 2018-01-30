@@ -15,7 +15,7 @@ public class MyService {
 
     public void await(){
         try {
-            //使用await方法前要先获取同步监视器
+            //使用await方法前要先调用lock.lock()方法获取同步监视器
             condition.await();
         } catch (InterruptedException e) {
             e.printStackTrace();
