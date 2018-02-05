@@ -18,7 +18,7 @@ public class RunFair {
         Thread[] threads = new Thread[10];
         for (int i = 0; i < 10; i++) {
             threads[i] = new Thread(runnable);
-            System.out.println("threadName：" + Thread.currentThread().getName()+" 运行了");
+            System.out.println("threadName：" + Thread.currentThread().getName() + " 运行了");
         }
         for (int i = 0; i < 10; i++) {
             threads[i].start();

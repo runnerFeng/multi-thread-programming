@@ -17,7 +17,7 @@ public class Service {
     public void serviceMethod() {
         try {
             reentrantLock.lock();
-            System.out.println("threadName：" + Thread.currentThread().getName()+" 获得锁");
+            System.out.println("threadName：" + Thread.currentThread().getName() + " 获得锁");
         } catch (Exception e) {
             e.printStackTrace();
         } finally {
