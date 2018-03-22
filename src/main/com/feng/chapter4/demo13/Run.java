@@ -1,15 +1,16 @@
-package com.feng.chapter4.demo12;
+package com.feng.chapter4.demo13;
 
 /**
  * @author jinx
- * @date 2018/3/8 18:01
- * Desc:getQueueLength():返回正在等待获取此线程的估计数
+ * @date 2018/03/22 21:40
+ * Desc:int getWaitQueueLength(Condition condition)返回等待与此锁定相关的给定条件的condition的线程估计数
+ *      该方法是细粒度condition级别
  */
 public class Run {
     public static void main(String[] args) throws InterruptedException {
         final Service service = new Service();
 
-        Runnable runnable = () -> service.method();
+        Runnable runnable = () -> service.waitMethod();
 
         Thread[] threads = new Thread[10];
         for (int i = 0; i < 10; i++) {
@@ -20,7 +21,6 @@ public class Run {
         }
 
         Thread.sleep(2000);
-
-        System.out.println("有线程："+service.lock.getQueueLength()+"在等待获取锁！");
+        service.notifyMethod();
     }
 }
