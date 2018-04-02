@@ -14,7 +14,5 @@ public class Run {
         Runnable runnable1 = service::write;
         Thread threadB = new Thread(runnable1);
         threadB.start();
-
-
     }
 }
