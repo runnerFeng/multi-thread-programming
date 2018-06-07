@@ -3,7 +3,7 @@ package com.feng.chapter2.demo6;
 /**
  * @author jinx
  * @date 2018/06/07 22:38
- * Desc:
+ * Desc:读取cvf文件时空指针模仿
  */
 public class Run {
     public static void main(String[] args) {
