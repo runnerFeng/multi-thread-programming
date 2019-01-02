@@ -5,7 +5,7 @@ package com.feng.chapter2.demo1;
  * @date 2018/1/3 18:13
  * Desc:
  */
-public class HasSelfPrivateNum {
+public class HasSelfPrivateNum { 
     public void addI(String username){
         try {
             int num = 0;
