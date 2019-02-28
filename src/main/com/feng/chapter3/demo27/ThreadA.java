@@ -11,10 +11,10 @@ public class ThreadA extends Thread {
     @Override
     public void run() {
         for (int i = 0; i < 100; i++) {
-            if (null == Tools.t.get()){
-            Tools.t.set(new Date());
+            if (null == Tools.t.get()) {
+                Tools.t.set(new Date());
             }
-            System.out.println("threadA get value:"+ Tools.t.get());
+            System.out.println("threadA get value:" + Tools.t.get());
             try {
                 Thread.sleep(200);
             } catch (InterruptedException e) {

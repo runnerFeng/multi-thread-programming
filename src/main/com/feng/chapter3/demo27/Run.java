@@ -6,7 +6,7 @@ package com.feng.chapter3.demo27;
  * Desc:get返回null问题
  */
 public class Run {
-    public static void main(String[] args) throws InterruptedException {
+    public static void main(String[] args) {
         ThreadA threadA = new ThreadA();
         threadA.start();
 
