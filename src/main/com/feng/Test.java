@@ -7,6 +7,10 @@ package com.feng;
  */
 public class Test {
     public static void main(String[] args) {
+//        ThreadPoolExecutor executor = new ThreadPoolExecutor();
+//        executor.execute();
+        int c = Runtime.getRuntime().availableProcessors();
+        System.out.println(c);
         System.out.println(11);
     }
 }
