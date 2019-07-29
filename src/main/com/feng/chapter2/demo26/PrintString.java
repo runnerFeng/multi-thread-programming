@@ -8,9 +8,9 @@ package com.feng.chapter2.demo26;
 public class PrintString {
     private boolean isContinuePrintString = true;
 
-    public void printStringMethod(){
-        while (isContinuePrintString == true){
-            System.out.println("run printStringMethod threadName:"+Thread.currentThread().getName());
+    public void printStringMethod() {
+        while (isContinuePrintString == true) {
+            System.out.println("run printStringMethod threadName:" + Thread.currentThread().getName());
             try {
                 Thread.sleep(2000);
             } catch (InterruptedException e) {

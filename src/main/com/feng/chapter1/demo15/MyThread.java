@@ -11,7 +11,7 @@ public class MyThread extends Thread {
         super.run();
         int j = 50000;
         for (int i = 0; i < j; i++) {
-            System.out.println("i  "+(i+1));
+            System.out.println("i  " + (i + 1));
         }
     }
 }

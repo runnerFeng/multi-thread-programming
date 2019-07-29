@@ -13,7 +13,7 @@ public class MyService {
     private Lock lock = new ReentrantLock();
     private Condition condition = lock.newCondition();
 
-    public void await(){
+    public void await() {
         try {
             //使用await方法前要先调用lock.lock()方法获取同步监视器
             condition.await();

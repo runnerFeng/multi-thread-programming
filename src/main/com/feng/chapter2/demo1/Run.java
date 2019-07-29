@@ -11,7 +11,7 @@ public class Run {
         HasSelfPrivateNum hasSelfPrivateNum = new HasSelfPrivateNum();
         ThreadA threadA = new ThreadA(hasSelfPrivateNum);
         threadA.start();
-        ThreadB threadB  = new ThreadB(hasSelfPrivateNum);
+        ThreadB threadB = new ThreadB(hasSelfPrivateNum);
         threadB.start();
     }
 }

@@ -5,7 +5,7 @@ package com.feng.chapter3.demo14;
  * @date 2018/1/23 23:51
  * Desc:
  */
-public class ThreadP extends Thread{
+public class ThreadP extends Thread {
     private MyStack myStack;
 
     public ThreadP(MyStack myStack) {
@@ -14,7 +14,7 @@ public class ThreadP extends Thread{
 
     @Override
     public void run() {
-        while (true){
+        while (true) {
             myStack.push();
         }
     }

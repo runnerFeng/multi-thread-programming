@@ -19,10 +19,11 @@ public class MyService {
             System.out.println("methodA end threadName: " + Thread.currentThread().getName() + " time" + System.currentTimeMillis());
         } catch (InterruptedException e) {
             e.printStackTrace();
-        }finally {
+        } finally {
             lock.unlock();
         }
     }
+
     public void methodB() {
         try {
             lock.lock();
@@ -31,7 +32,7 @@ public class MyService {
             System.out.println("methodB end threadName: " + Thread.currentThread().getName() + " time" + System.currentTimeMillis());
         } catch (InterruptedException e) {
             e.printStackTrace();
-        }finally {
+        } finally {
             lock.unlock();
         }
     }

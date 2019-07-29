@@ -14,7 +14,7 @@ public class MyThread extends Thread {
             Thread.sleep(200000);
             System.out.println("run end");
         } catch (InterruptedException e) {
-            System.out.println("在sleep状态被停止，进入catch块："+this.isInterrupted());
+            System.out.println("在sleep状态被停止，进入catch块：" + this.isInterrupted());
         }
     }
 }

@@ -22,10 +22,10 @@ public class MyRunnable {
         }
     };
 
-    private static Runnable runnable2  =new Runnable() {
+    private static Runnable runnable2 = new Runnable() {
         @Override
         public void run() {
-            synchronized (object){
+            synchronized (object) {
                 object.notify();
             }
         }

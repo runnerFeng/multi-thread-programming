@@ -5,7 +5,7 @@ package com.feng.chapter2.demo24;
  * @date 2018/1/11 21:40
  * Desc:
  */
-public class ThreadB extends Thread{
+public class ThreadB extends Thread {
     private MyService service;
 
     public ThreadB(MyService service) {

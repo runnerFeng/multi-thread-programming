@@ -6,7 +6,7 @@ package com.feng.chapter2.demo30;
  * Desc:
  */
 public class MyThread extends Thread {
-//    volatile public static int count;
+    //    volatile public static int count;
     public static int count;
 
     /**

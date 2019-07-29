@@ -8,7 +8,7 @@ package com.feng.chapter2.demo2;
 public class HasSelfPrivateNum {
     int num = 0;
 
-     public void addI(String username) {
+    public void addI(String username) {
         try {
             if ("a".equals(username)) {
                 num = 100;

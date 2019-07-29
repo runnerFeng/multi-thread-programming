@@ -9,18 +9,19 @@ import java.util.concurrent.locks.ReentrantLock;
  */
 public class MyService {
     private ReentrantLock lock = new ReentrantLock();
-    public void waitMethod(){
+
+    public void waitMethod() {
         try {
             lock.lockInterruptibly();
-            System.out.println("lock begin:"+Thread.currentThread().getName());
-            for (int i = 0; i < Integer.MAX_VALUE/10; i++) {
+            System.out.println("lock begin:" + Thread.currentThread().getName());
+            for (int i = 0; i < Integer.MAX_VALUE / 10; i++) {
                 Math.random();
             }
-            System.out.println("lock end:"+Thread.currentThread().getName());
+            System.out.println("lock end:" + Thread.currentThread().getName());
         } catch (InterruptedException e) {
             e.printStackTrace();
         } finally {
-            if (lock.isHeldByCurrentThread()){
+            if (lock.isHeldByCurrentThread()) {
                 System.out.println(lock.isHeldByCurrentThread());
                 lock.unlock();
             }

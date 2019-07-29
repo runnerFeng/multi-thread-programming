@@ -13,7 +13,7 @@ public class Run {
             myThread.start();
             Thread.sleep(500);
             myThread.stop();
-            System.out.println(object.getUsername()+" "+object.getPassword());
+            System.out.println(object.getUsername() + " " + object.getPassword());
         } catch (InterruptedException e) {
             e.printStackTrace();
         }

@@ -21,6 +21,6 @@ public class MyList {
         System.out.println("threadName:" + Thread.currentThread().getName() + "执行了getSize方法！");
         int size = list.size();
         System.out.println("threadName:" + Thread.currentThread().getName() + "退出了getSize方法！");
-        return  size;
+        return size;
     }
 }

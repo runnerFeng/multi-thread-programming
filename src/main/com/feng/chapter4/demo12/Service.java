@@ -9,10 +9,11 @@ import java.util.concurrent.locks.ReentrantLock;
  */
 public class Service {
     public ReentrantLock lock = new ReentrantLock();
-    public void method(){
+
+    public void method() {
         try {
             lock.lock();
-            System.out.println("thread:"+Thread.currentThread().getName()+"进入method方法！");
+            System.out.println("thread:" + Thread.currentThread().getName() + "进入method方法！");
             Thread.sleep(Integer.MAX_VALUE);
         } catch (Exception e) {
             e.printStackTrace();

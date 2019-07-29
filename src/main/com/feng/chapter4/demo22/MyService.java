@@ -10,18 +10,19 @@ import java.util.concurrent.locks.ReentrantLock;
  */
 public class MyService {
     private ReentrantLock lock = new ReentrantLock();
-    public void waitMethod(){
+
+    public void waitMethod() {
         try {
-            if (lock.tryLock(3, TimeUnit.SECONDS)){
-                System.out.println(Thread.currentThread().getName()+"获得锁的时间为："+System.currentTimeMillis());
+            if (lock.tryLock(3, TimeUnit.SECONDS)) {
+                System.out.println(Thread.currentThread().getName() + "获得锁的时间为：" + System.currentTimeMillis());
                 Thread.sleep(10000);
-            }else{
-                System.out.println(Thread.currentThread().getName()+"未获得锁");
+            } else {
+                System.out.println(Thread.currentThread().getName() + "未获得锁");
             }
         } catch (InterruptedException e) {
             e.printStackTrace();
         } finally {
-            if (lock.isHeldByCurrentThread()){
+            if (lock.isHeldByCurrentThread()) {
                 lock.unlock();
             }
         }

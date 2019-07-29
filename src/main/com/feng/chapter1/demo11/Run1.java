@@ -8,9 +8,9 @@ package com.feng.chapter1.demo11;
 public class Run1 {
     public static void main(String[] args) throws InterruptedException {
         MyThread myThread = new MyThread();
-        System.out.println("begin:"+myThread.isAlive());
+        System.out.println("begin:" + myThread.isAlive());
         myThread.start();
         Thread.sleep(1000);
-        System.out.println("end:"+myThread.isAlive());
+        System.out.println("end:" + myThread.isAlive());
     }
 }

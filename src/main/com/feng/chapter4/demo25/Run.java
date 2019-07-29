@@ -14,15 +14,16 @@ public class Run {
     private static final Condition conditionA = lock.newCondition();
     private static final Condition conditionB = lock.newCondition();
     private static final Condition conditionC = lock.newCondition();
+
     public static void main(String[] args) {
         Thread threadA = new Thread(() -> {
             try {
                 lock.lock();
-                while (nextPrintWho !=1){
+                while (nextPrintWho != 1) {
                     conditionA.await();
                 }
                 for (int i = 0; i < 3; i++) {
-                    System.out.println("conditionA"+i);
+                    System.out.println("conditionA" + i);
                 }
                 conditionB.signalAll();
                 nextPrintWho = 2;
@@ -36,11 +37,11 @@ public class Run {
         Thread threadB = new Thread(() -> {
             try {
                 lock.lock();
-                while (nextPrintWho !=2){
+                while (nextPrintWho != 2) {
                     conditionB.await();
                 }
                 for (int i = 0; i < 3; i++) {
-                    System.out.println("conditionB"+i);
+                    System.out.println("conditionB" + i);
                 }
                 conditionC.signalAll();
                 nextPrintWho = 3;
@@ -54,11 +55,11 @@ public class Run {
         Thread threadC = new Thread(() -> {
             try {
                 lock.lock();
-                while (nextPrintWho !=3){
+                while (nextPrintWho != 3) {
                     conditionC.await();
                 }
                 for (int i = 0; i < 3; i++) {
-                    System.out.println("conditionC"+i);
+                    System.out.println("conditionC" + i);
                 }
                 conditionA.signalAll();
                 nextPrintWho = 1;

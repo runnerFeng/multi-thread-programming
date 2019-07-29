@@ -7,7 +7,7 @@ package com.feng.chapter4.demo21;
  */
 public class Run {
     public static void main(String[] args) {
-        final  MyService service = new MyService();
+        final MyService service = new MyService();
         Runnable runnable = service::waitMethod;
 
         Thread threadA = new Thread(runnable);

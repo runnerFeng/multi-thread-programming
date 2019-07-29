@@ -13,7 +13,7 @@ public class MyService {
     private Lock lock = new ReentrantLock();
     private Condition condition = lock.newCondition();
 
-    public void await(){
+    public void await() {
         try {
             lock.lock();
             System.out.println("A");
@@ -22,7 +22,7 @@ public class MyService {
             System.out.println("B");
         } catch (InterruptedException e) {
             e.printStackTrace();
-        }finally {
+        } finally {
             lock.unlock();
             System.out.println("锁释放了");
         }

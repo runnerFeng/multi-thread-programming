@@ -5,7 +5,7 @@ package com.feng.chapter1.demo3;
  * @date 2017/12/25 22:06
  * Desc:
  */
-public class MyThread extends Thread{
+public class MyThread extends Thread {
     private int i;
 
     public MyThread(int i) {

@@ -14,7 +14,7 @@ public class MyThreadB extends Thread {
     }
 
     @Override
-    public void run(){
+    public void run() {
         try {
             service1.methodA();
         } catch (InterruptedException e) {

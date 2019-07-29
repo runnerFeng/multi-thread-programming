@@ -12,7 +12,7 @@ public class Service {
     private ReentrantLock lock = new ReentrantLock();
     private Condition condition = lock.newCondition();
 
-    public void waitMethod(){
+    public void waitMethod() {
         try {
             lock.lock();
             condition.await();
@@ -23,10 +23,10 @@ public class Service {
         }
     }
 
-    public void notifyMethod(){
+    public void notifyMethod() {
         try {
             lock.lock();
-            System.out.println("有："+lock.getWaitQueueLength(condition)+"个线程正在等待condition!");
+            System.out.println("有：" + lock.getWaitQueueLength(condition) + "个线程正在等待condition!");
             condition.signal();
         } catch (Exception e) {
             e.printStackTrace();

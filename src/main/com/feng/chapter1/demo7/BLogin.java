@@ -8,6 +8,6 @@ package com.feng.chapter1.demo7;
 public class BLogin extends Thread {
     @Override
     public void run() {
-        LoginServlet.doPost("b","bb");
+        LoginServlet.doPost("b", "bb");
     }
 }

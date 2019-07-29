@@ -8,6 +8,6 @@ package com.feng.chapter1.demo11;
 public class MyThread extends Thread {
     @Override
     public void run() {
-        System.out.println("run:"+this.isAlive());
+        System.out.println("run:" + this.isAlive());
     }
 }

@@ -12,8 +12,8 @@ public class Run {
         threadA.start();
         threadB.start();
         for (int i = 0; i < 100; i++) {
-            Tools.t.set("main:"+(i+1));
-            System.out.println("main get value:"+Tools.t.get());
+            Tools.t.set("main:" + (i + 1));
+            System.out.println("main get value:" + Tools.t.get());
             Thread.sleep(200);
         }
     }

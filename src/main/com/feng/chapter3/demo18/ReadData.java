@@ -14,8 +14,8 @@ public class ReadData {
             System.out.println("read:");
             char[] charArray = new char[20];
             int readLength = input.read(charArray);
-            while (readLength != -1){
-                String newData = new String(charArray,0,readLength);
+            while (readLength != -1) {
+                String newData = new String(charArray, 0, readLength);
                 System.out.print(newData);
                 readLength = input.read(charArray);
             }

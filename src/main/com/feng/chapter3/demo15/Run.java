@@ -7,7 +7,7 @@ package com.feng.chapter3.demo15;
  */
 public class Run {
     public static void main(String[] args) {
-        MyStack myStack  = new MyStack();
+        MyStack myStack = new MyStack();
         ThreadP threadP = new ThreadP(myStack);
         ThreadP threadP2 = new ThreadP(myStack);
         ThreadP threadP3 = new ThreadP(myStack);

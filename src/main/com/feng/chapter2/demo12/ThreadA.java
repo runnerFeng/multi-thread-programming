@@ -6,7 +6,7 @@ package com.feng.chapter2.demo12;
  * Desc:
  */
 public class ThreadA extends Thread {
-    MyList list  = new MyList();
+    MyList list = new MyList();
 
     public ThreadA(MyList list) {
         this.list = list;
@@ -15,7 +15,7 @@ public class ThreadA extends Thread {
     @Override
     public void run() {
         for (int i = 0; i < 100000; i++) {
-        list.add("threadA"+i);
+            list.add("threadA" + i);
         }
     }
 }

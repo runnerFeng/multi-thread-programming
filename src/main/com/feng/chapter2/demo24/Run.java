@@ -7,7 +7,7 @@ package com.feng.chapter2.demo24;
  */
 public class Run {
     public static void main(String[] args) throws InterruptedException {
-        MyService myService= new MyService();
+        MyService myService = new MyService();
         ThreadA thread1 = new ThreadA(myService);
         thread1.setName("a");
         ThreadB thread2 = new ThreadB(myService);
@@ -17,9 +17,9 @@ public class Run {
         thread2.start();
     }
     /* output:
-    *  a start
-    *  b start
-    *  a end
-    *  b end
-    * */
+     *  a start
+     *  b start
+     *  a end
+     *  b end
+     * */
 }

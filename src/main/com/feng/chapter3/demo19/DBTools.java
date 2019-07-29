@@ -10,7 +10,7 @@ public class DBTools {
 
     synchronized public void backupA() {
         try {
-            while (prevIsA ==true) {
+            while (prevIsA == true) {
                 wait();
             }
             for (int i = 0; i < 5; i++) {

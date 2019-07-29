@@ -12,7 +12,7 @@ public class Service {
     public ReentrantLock lock = new ReentrantLock();
     private Condition condition = lock.newCondition();
 
-    public void waitMethod(){
+    public void waitMethod() {
         try {
             lock.lock();
             Thread.sleep(Integer.MAX_VALUE);

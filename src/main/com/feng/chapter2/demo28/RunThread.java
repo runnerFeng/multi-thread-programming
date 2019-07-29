@@ -20,7 +20,8 @@ public class RunThread extends Thread {
     @Override
     public void run() {
         System.out.println("进入run方法");
-        while (isRunning){}
+        while (isRunning) {
+        }
         System.out.println("退出run方法");
     }
 }

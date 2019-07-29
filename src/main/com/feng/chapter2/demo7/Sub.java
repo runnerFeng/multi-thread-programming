@@ -6,11 +6,11 @@ package com.feng.chapter2.demo7;
  * Desc:重入锁在继承关系中的调用
  */
 public class Sub extends Main {
-    synchronized public void operateISubMethod(){
+    synchronized public void operateISubMethod() {
         try {
-            while (i>0){
+            while (i > 0) {
                 i--;
-                System.out.println("sub print:"+i);
+                System.out.println("sub print:" + i);
                 Thread.sleep(100);
                 this.operateIMainMethod();
             }

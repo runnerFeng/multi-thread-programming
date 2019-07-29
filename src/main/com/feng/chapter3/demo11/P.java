@@ -18,8 +18,8 @@ public class P {
                 if (!"".equals(ValueObject.value)) {
                     string.wait();
                 }
-                String value = System.currentTimeMillis()+"_"+System.nanoTime();
-                System.out.println("set的值是："+value);
+                String value = System.currentTimeMillis() + "_" + System.nanoTime();
+                System.out.println("set的值是：" + value);
                 ValueObject.value = value;
                 string.notify();
             }

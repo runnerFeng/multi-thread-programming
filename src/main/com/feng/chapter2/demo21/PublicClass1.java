@@ -25,7 +25,7 @@ public class PublicClass1 {
         this.password = password;
     }
 
-    static class PrivateClass{
+    static class PrivateClass {
         private String age;
         private String address;
 

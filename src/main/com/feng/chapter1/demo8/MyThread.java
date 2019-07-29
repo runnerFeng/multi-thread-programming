@@ -7,9 +7,10 @@ package com.feng.chapter1.demo8;
  */
 public class MyThread extends Thread {
     private int i = 5;
+
     @Override
     public void run() {
         super.run();
-        System.out.println("i="+(i--)+" threadName="+Thread.currentThread().getName());
+        System.out.println("i=" + (i--) + " threadName=" + Thread.currentThread().getName());
     }
 }

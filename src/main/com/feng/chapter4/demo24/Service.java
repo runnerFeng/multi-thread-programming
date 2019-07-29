@@ -28,12 +28,12 @@ public class Service {
         }
     }
 
-    public void nofityMethod(){
+    public void nofityMethod() {
         try {
             lock.lock();
-            System.out.println("notify begin:"+System.currentTimeMillis());
+            System.out.println("notify begin:" + System.currentTimeMillis());
             condition.signalAll();
-            System.out.println("notify end  :"+System.currentTimeMillis());
+            System.out.println("notify end  :" + System.currentTimeMillis());
         } finally {
             lock.unlock();
         }

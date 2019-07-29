@@ -10,11 +10,11 @@ public class Run {
         PublicClass publicClass = new PublicClass();
         publicClass.setUsername("username");
         publicClass.setPassword("password");
-        System.out.println(publicClass.getUsername()+" "+publicClass.getPassword());
+        System.out.println(publicClass.getUsername() + " " + publicClass.getPassword());
         PublicClass.PrivateClass privteClass = publicClass.new PrivateClass();
         privteClass.setAddress("address");
         privteClass.setAge("age");
-        System.out.println(privteClass.getAge()+" "+privteClass.getAddress());
+        System.out.println(privteClass.getAge() + " " + privteClass.getAddress());
 
     }
 }

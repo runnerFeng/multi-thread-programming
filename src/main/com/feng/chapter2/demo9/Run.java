@@ -11,7 +11,7 @@ public class Run {
         ThreadA threadA = new ThreadA(sub);
         threadA.setName("a");
         threadA.start();
-        ThreadB threadB  = new ThreadB(sub);
+        ThreadB threadB = new ThreadB(sub);
         threadB.setName("b");
         threadB.start();
     }

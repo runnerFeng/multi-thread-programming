@@ -14,10 +14,10 @@ public class Service {
         this.lock = new ReentrantLock(isFair);
     }
 
-    public void serviceMethod(){
+    public void serviceMethod() {
         try {
             lock.lock();
-            System.out.println("是否为公平锁："+lock.isFair());
+            System.out.println("是否为公平锁：" + lock.isFair());
         } catch (Exception e) {
             e.printStackTrace();
         } finally {

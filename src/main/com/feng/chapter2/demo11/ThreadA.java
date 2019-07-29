@@ -14,6 +14,6 @@ public class ThreadA extends Thread {
 
     @Override
     public void run() {
-        service.setUsernameAndPassword("a","aa");
+        service.setUsernameAndPassword("a", "aa");
     }
 }

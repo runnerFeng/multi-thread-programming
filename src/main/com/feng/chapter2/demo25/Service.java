@@ -8,14 +8,14 @@ package com.feng.chapter2.demo25;
 public class Service {
     public void testMethod(UserInfo userInfo) {
         synchronized (userInfo) {
-            System.out.println(Thread.currentThread().getName()+" start");
+            System.out.println(Thread.currentThread().getName() + " start");
             userInfo.setUsrenae("aaa");
             try {
                 Thread.sleep(2000);
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
-            System.out.println(Thread.currentThread().getName()+" end");
+            System.out.println(Thread.currentThread().getName() + " end");
         }
     }
 }

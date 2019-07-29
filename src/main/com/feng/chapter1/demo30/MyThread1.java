@@ -5,10 +5,10 @@ package com.feng.chapter1.demo30;
  * @date 2018/1/3 14:32
  * Desc:
  */
-public class MyThread1 extends Thread{
+public class MyThread1 extends Thread {
     @Override
     public void run() {
-        System.out.println("MyThreadA run priority:"+this.getPriority());
+        System.out.println("MyThreadA run priority:" + this.getPriority());
         MyThread2 thread2 = new MyThread2();
         thread2.start();
     }

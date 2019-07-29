@@ -6,19 +6,20 @@ package com.feng.chapter2.demo6;
  * Desc:
  */
 public class Service1 {
-    synchronized  public void methodA() throws InterruptedException {
+    synchronized public void methodA() throws InterruptedException {
 
-       int count = methodB();
-        System.out.println(Thread.currentThread().getName()+":methodA:"+count);
+        int count = methodB();
+        System.out.println(Thread.currentThread().getName() + ":methodA:" + count);
 
     }
+
     public int methodB() throws InterruptedException {
         int count = 0;
         for (int i = 0; i < 100000; i++) {
-            count+=i;
+            count += i;
         }
         Thread.sleep(2000);
-        System.out.println(Thread.currentThread().getName()+":methodB");
+        System.out.println(Thread.currentThread().getName() + ":methodB");
         return count;
     }
 }

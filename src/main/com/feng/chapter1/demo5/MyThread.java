@@ -15,9 +15,9 @@ public class MyThread extends Thread {
     @Override
     public void run() {
         super.run();
-        while (count>0){
+        while (count > 0) {
             count--;
-            System.out.println("由"+Thread.currentThread().getName()+"计算，count="+count);
+            System.out.println("由" + Thread.currentThread().getName() + "计算，count=" + count);
         }
     }
 }

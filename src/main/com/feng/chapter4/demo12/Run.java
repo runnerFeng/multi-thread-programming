@@ -21,6 +21,6 @@ public class Run {
 
         Thread.sleep(2000);
 
-        System.out.println("有线程："+service.lock.getQueueLength()+"在等待获取锁！");
+        System.out.println("有线程：" + service.lock.getQueueLength() + "在等待获取锁！");
     }
 }

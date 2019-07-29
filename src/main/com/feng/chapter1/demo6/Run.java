@@ -21,11 +21,11 @@ public class Run {
 //        e.start();
 
         MyThread1 myThread1 = new MyThread1();
-        Thread aa = new Thread(myThread1,"A");
-        Thread bb = new Thread(myThread1,"B");
-        Thread cc = new Thread(myThread1,"C");
-        Thread dd = new Thread(myThread1,"D");
-        Thread ee = new Thread(myThread1,"E");
+        Thread aa = new Thread(myThread1, "A");
+        Thread bb = new Thread(myThread1, "B");
+        Thread cc = new Thread(myThread1, "C");
+        Thread dd = new Thread(myThread1, "D");
+        Thread ee = new Thread(myThread1, "E");
         aa.start();
         bb.start();
         cc.start();

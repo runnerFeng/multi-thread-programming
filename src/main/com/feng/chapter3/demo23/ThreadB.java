@@ -17,7 +17,7 @@ public class ThreadB extends Thread {
         }
     }
 
-    synchronized public void bService(){
-        System.out.println("bServiceBegin:"+System.currentTimeMillis());
+    synchronized public void bService() {
+        System.out.println("bServiceBegin:" + System.currentTimeMillis());
     }
 }

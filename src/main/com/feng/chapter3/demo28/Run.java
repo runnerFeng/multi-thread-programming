@@ -7,8 +7,9 @@ package com.feng.chapter3.demo28;
  */
 public class Run {
     public static ThreadLocalExt t = new ThreadLocalExt();
+
     public static void main(String[] args) {
-        if (null ==t.get()){
+        if (null == t.get()) {
             t.set("我没有默认值");
         }
         System.out.println(t.get());

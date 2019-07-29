@@ -13,7 +13,7 @@ public class Reminder {
 
     public Reminder(int seconds) {
         timer = new Timer();
-        timer.schedule(new RemindTask(), seconds*1000);
+        timer.schedule(new RemindTask(), seconds * 1000);
     }
 
     static class RemindTask extends TimerTask {

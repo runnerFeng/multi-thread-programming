@@ -20,8 +20,8 @@ public class PublicVar {
         }
     }
 
-//    public void getValue(){
-    synchronized public void getValue(){
-        System.out.println("getValue method -->username:"+username+" password:"+password);
+    //    public void getValue(){
+    synchronized public void getValue() {
+        System.out.println("getValue method -->username:" + username + " password:" + password);
     }
 }

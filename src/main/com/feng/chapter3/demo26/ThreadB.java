@@ -9,8 +9,8 @@ public class ThreadB extends Thread {
     @Override
     public void run() {
         for (int i = 0; i < 100; i++) {
-            Tools.t.set("threadB:"+(i+1));
-            System.out.println("threadB get value:"+ Tools.t.get());
+            Tools.t.set("threadB:" + (i + 1));
+            System.out.println("threadB get value:" + Tools.t.get());
             try {
                 Thread.sleep(200);
             } catch (InterruptedException e) {

@@ -7,12 +7,13 @@ package com.feng.chapter1.demo23;
  */
 public class MyThread extends Thread {
     private SynchronizedObject object;
+
     public MyThread(SynchronizedObject object) {
         this.object = object;
     }
 
     @Override
     public void run() {
-        object.printString("b","bb");
+        object.printString("b", "bb");
     }
 }

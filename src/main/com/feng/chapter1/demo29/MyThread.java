@@ -15,7 +15,7 @@ public class MyThread extends Thread {
             count = count + i + 1;
         }
         long endTime = System.currentTimeMillis();
-        System.out.println("用时："+(endTime - beginTime));
+        System.out.println("用时：" + (endTime - beginTime));
     }
 
     public static void main(String[] args) {

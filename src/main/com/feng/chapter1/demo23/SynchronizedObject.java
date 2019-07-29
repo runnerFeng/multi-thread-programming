@@ -25,7 +25,7 @@ public class SynchronizedObject {
         this.password = password;
     }
 
-    synchronized public void printString(String username,String password){
+    synchronized public void printString(String username, String password) {
         try {
             this.username = username;
             Thread.sleep(1000);

@@ -13,14 +13,14 @@ public class Run {
             public void run() {
                 innerClass.method1();
             }
-        },"A");
+        }, "A");
 
         Thread thread2 = new Thread(new Runnable() {
             @Override
             public void run() {
                 innerClass.method2();
             }
-        },"B");
+        }, "B");
         thread1.start();
         thread2.start();
     }

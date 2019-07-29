@@ -9,11 +9,11 @@ public class Run {
     public static void main(String[] args) throws InterruptedException {
         Service service = new Service();
         UserInfo userInfo = new UserInfo();
-        ThreadA threadA  = new ThreadA(service,userInfo);
+        ThreadA threadA = new ThreadA(service, userInfo);
         threadA.setName("a");
         threadA.start();
         Thread.sleep(2000);
-        ThreadB threadB = new ThreadB(service,userInfo);
+        ThreadB threadB = new ThreadB(service, userInfo);
         threadB.setName("b");
         threadB.start();
     }

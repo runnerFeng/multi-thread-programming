@@ -4,8 +4,8 @@ package com.feng.chapter4.demo14;
  * @author jinx
  * @date 2018/03/22 21:54
  * Desc:boolean hasQueuedThread(Thread thread)查询指定的线程是否正在等待获取此锁
- *      boolean hasQueuedThreads()查询是否有线程正在等待获取此锁
- *      这两个方法都是粗粒度lock级别的方法
+ * boolean hasQueuedThreads()查询是否有线程正在等待获取此锁
+ * 这两个方法都是粗粒度lock级别的方法
  */
 public class Run {
     public static void main(String[] args) throws InterruptedException {

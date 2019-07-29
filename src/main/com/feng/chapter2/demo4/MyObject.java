@@ -6,7 +6,7 @@ package com.feng.chapter2.demo4;
  * Desc:
  */
 public class MyObject {
-    synchronized public void methodA(){
+    synchronized public void methodA() {
         try {
             System.out.println("begin methodA threadName:" + Thread.currentThread().getName());
             Thread.sleep(5000);
@@ -16,8 +16,8 @@ public class MyObject {
         }
     }
 
-//      public void methodB(){
-     synchronized public void methodB(){
+    //      public void methodB(){
+    synchronized public void methodB() {
         try {
             System.out.println("begin methodB threadName:" + Thread.currentThread().getName());
             Thread.sleep(5000);

@@ -18,7 +18,7 @@ public class C {
                 if ("".equals(ValueObject.value)) {
                     string.wait();
                 }
-                System.out.println("get的value值是："+ValueObject.value);
+                System.out.println("get的value值是：" + ValueObject.value);
                 ValueObject.value = "";
                 string.notify();
             }

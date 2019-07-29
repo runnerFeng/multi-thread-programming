@@ -7,7 +7,7 @@ import java.util.concurrent.atomic.AtomicInteger;
  * @date 2018/1/14 22:41
  * Desc:
  */
-public class AddCountThread extends Thread{
+public class AddCountThread extends Thread {
     private AtomicInteger integer = new AtomicInteger(0);
 
     @Override

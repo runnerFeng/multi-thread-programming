@@ -34,7 +34,7 @@ public class LoginServlet {
                 Thread.sleep(500);
             }
             passwordRef = password;
-            System.out.println("username="+usernameRef+" password="+passwordRef);
+            System.out.println("username=" + usernameRef + " password=" + passwordRef);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
